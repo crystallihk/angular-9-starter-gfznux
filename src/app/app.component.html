@@ -1,0 +1,13 @@
+<stimulsoft-viewer-angular #viewer
+  [requestUrl]="'https://ejob.mrchr.com/reporttest/viewer/{action}'"
+  [action]="'InitViewer'"
+  [height]="'1024px'"
+  [width]="'1000px'"
+  [backgroundColor]="'#ffcccc'"
+  [properties]="reportConfiguration"
+  (loaded)="loaded()"
+  (export)="export($event)"
+  (error)="error($event)"
+  (email)="email($event)"
+  (print)="print($event)">
+</stimulsoft-viewer-angular>
